@@ -8,7 +8,7 @@ const { initializePassport } = require('./passport-jwt/passport.config')
 const cors = require('cors')
 
 const app = express()
-const PORT = configObject.PORT
+const PORT = configObject.PORT||8080
 
 const httpServer = app.listen(PORT, err => {
     if (err) console.log(err)

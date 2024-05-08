@@ -1,0 +1,27 @@
+<h5>CODERHOUSE: PROGRAMACIÓN BACKEND</h5>
+<h1>Handle Role for User</h1>
+
+<section>
+    <div class="mx-auto p-3 w-50">
+        <p class="text-center"><strong>Name:</strong> {{first_name}} {{last_name}}</p>
+        <p class="text-center"><strong>Email:</strong> {{email}}</p>
+        <p class="text-center"><strong>Role:</strong> {{role}}</p>
+        <p class="text-center"><strong>Status:</strong> {{userStatus}}</p>
+
+
+        <form action="/api/users/premium/{{uid}}" method="POST" enctype="multipart/form-data" class="mt-3">
+            <div class="form-group mx-auto p-3 w-50">
+                <label for="userStatus" class="mx-auto p-3"><strong>Change User Status:</strong></label>
+                <select class="form-control" id="userStatus" name="userStatus">
+                    <option value="regular">REGULAR</option>
+                    <option value="pending">PENDING</option>
+                    <option value="approved">APPROVED</option>
+                </select>
+            </div>
+            <div class="mx-auto p-3 w-50"><button type="submit" class="btn btn-primary">Submit</button></div>
+            
+        </form>
+
+
+    
+</section>

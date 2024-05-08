@@ -1,0 +1,34 @@
+<h5>CODERHOUSE: PROGRAMACIÓN BACKEND</h5>
+<h1>Products</h1>
+
+    <!-- Product list -->
+    <div class="d-flex flex-wrap">
+        {{#each products}}
+            
+                <div class="card m-3" style="width: 18rem;">
+                <img src="/images/{{thumbnails}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{title}}</h5>
+                    <p class="card-text">Category: {{category}}</p>
+                    <p class="card-text">Description: {{description}}</p>
+                    <p class="card-text">Price: $ {{price}}</p>
+                    <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                </div>
+                </div>
+        {{/each}}
+    </div>
+
+
+    <!-- Pagination -->
+    <div class="text-center" >
+    {{#if hasPrevPage}}
+        <a href="/users?numPage={{prevPage}}" class="btn btn-primary">Anterior</a>
+    {{/if}}
+
+    {{#if hasNextPage}}
+        <a href="/users?numPage={{nextPage}}" class="btn btn-primary">Siguiente</a>
+    {{/if}}
+</div>
+
+
+<script src="/js/products.js"></script>

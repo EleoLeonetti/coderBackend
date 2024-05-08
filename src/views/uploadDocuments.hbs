@@ -1,0 +1,31 @@
+<h5>CODERHOUSE: PROGRAMACIÓN BACKEND</h5>
+<h1>Upload Documents</h1>
+
+<section>
+    <form action="/api/users/uploadDocs/{{uid}}" method="POST" enctype="multipart/form-data">
+        <div class="mx-auto p-3 w-50">
+            <label for="idProof" class="form-label">Identification Proof</label>
+            <input type="file" name="documents" id="idProof" accept=".pdf" class="form-control">
+        </div>
+        
+
+        <div class="mx-auto p-3 w-50">
+            <label for="adressProof" class="form-label">Adress Proof</label>
+            <input type="file" name="documents" id="adressProof" accept=".pdf" class="form-control">
+        </div>
+        
+
+        <div class="mx-auto p-3 w-50">
+            <label for="accountStatus" class="form-label">Account Status</label>
+            <input type="file" name="documents" id="accountStatus" accept=".pdf" class="form-control">   
+        </div>
+        
+
+        <div class="mx-auto p-3 w-50">
+            <button type="submit" class="btn btn-primary">Upload Documents</button>
+        </div>
+        
+    </form>
+</section>
+
+    
